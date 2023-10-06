@@ -600,6 +600,7 @@ void State::dumpStatus(Connection & conn)
                     {"mandatoryFeatures", m->mandatoryFeatures},
                     {"nrStepsDone", s->nrStepsDone.load()},
                     {"currentJobs", s->currentJobs.load()},
+                    {"maxJobs", m->maxJobs},
                     {"disabledUntil", std::chrono::system_clock::to_time_t(info->disabledUntil)},
                     {"lastFailure", std::chrono::system_clock::to_time_t(info->lastFailure)},
                     {"consecutiveFailures", info->consecutiveFailures},
